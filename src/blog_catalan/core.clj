@@ -2,12 +2,12 @@
 
 (defn factorial [n]
   "Counts a factorial."
-  (reduce * (range 1 (inc n))))
+  (reduce *' (range 1 (inc n))))
 
 (defn binomial [n k]
   "Counts a binomial coefficient."
   (/ (factorial n)
-     (* (factorial k)
+     (*' (factorial k)
         (factorial (- n k)))))
 
 (defn catalan [n]
