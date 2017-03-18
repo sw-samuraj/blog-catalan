@@ -8,7 +8,7 @@
   "Counts a binomial coefficient."
   (/ (factorial n)
      (*' (factorial k)
-        (factorial (- n k)))))
+         (factorial (- n k)))))
 
 (defn catalan [n]
   "Counts a Catalan number."
