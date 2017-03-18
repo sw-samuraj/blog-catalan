@@ -1,6 +1,5 @@
 (ns blog-catalan.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn factorial [n]
+  "Counts a factorial."
+  (reduce * (range 1 (inc n))))
